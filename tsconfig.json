@@ -1,8 +1,5 @@
 {
-  "include": ["src/"],
-  "exclude": [],
-  "compilerOptions": {
-    "noImplicitAny": true,
-    "strict": true
-  }
+    "include": ["./src/**/*"],
+    "exclude": [],
+    "compilerOptions": {}
 }
