@@ -1,5 +1,11 @@
 {
     "include": ["./src/**/*"],
     "exclude": [],
-    "compilerOptions": {}
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "strict": true,
+        "outDir": "./dist",
+        "rootDir": "./src"
+    }
 }
