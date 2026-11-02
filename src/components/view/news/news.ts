@@ -1,14 +1,16 @@
+import { Article, ArticleJSON } from '../../../types/interfaces';
 import './news.css';
 
 class News {
-    draw(data) {
+    draw(data: Article[]): void {
+        console.log(data);
         const news = data.length >= 10 ? data.filter((_item, idx) => idx < 10) : data;
 
         const fragment = document.createDocumentFragment();
         const newsItemTemp = document.querySelector('#newsItemTemp');
 
         news.forEach((item, idx) => {
-            const newsClone = newsItemTemp.content.cloneNode(true);
+            const newsClone = newsItemTemp?.content.cloneNode(true);
 
             if (idx % 2) newsClone.querySelector('.news__item').classList.add('alt');
 
