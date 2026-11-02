@@ -1,5 +1,5 @@
 {
-    "include": ["./src/**/*"],
+    "include": ["./src/**/*", "custom.d.ts"],
     "exclude": [],
     "compilerOptions": {
         "target": "es6",
