@@ -11,7 +11,7 @@ class App {
         this.view = new AppView();
     }
 
-    start() {
+    start(): void {
         document
             .querySelector('.sources')
             ?.addEventListener('click', (e) =>
