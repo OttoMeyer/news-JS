@@ -1,3 +1,4 @@
+import { ArticleJSON } from '../../types/interfaces';
 import News from './news/news';
 import Sources from './sources/sources';
 
@@ -10,7 +11,7 @@ export class AppView {
         this.sources = new Sources();
     }
 
-    drawNews(data) {
+    drawNews(data: ArticleJSON) {
         const values = data?.articles ? data?.articles : [];
         this.news.draw(values);
     }
